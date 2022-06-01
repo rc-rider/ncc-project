@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@100;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .dropbtn {
+            background-color: #e3dddd;
+            color: rgb(2, 10, 154);
+            padding: 10px 25px;
+            font-size: 20px;
+            border: none;
+            margin-right: 10px;
+            margin-top: -9px;
+            border-radius: 7px;
+        }
+    
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+    
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f1f1f1;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+        }
+    
+        .dropdown-content a {
+            color: black;
+            padding: 10px 25px;;
+            text-decoration: none;
+            display: block;
+        }
+    
+        .dropdown-content a:hover {
+            background-color: #222;
+            transition: .5s;
+        }
+    
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+    
+        .dropdown:hover .dropbtn {
+            background-color: #222;
+            color: white;
+        }
+    .img1{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .img1 img{
+        width: 99%;
+        height: auto;
+        margin-right: 20px;
+    }
+    .img3{
+        text-align: center;
+    }
+
+*{
+  box-sizing: border-box;
+}
+
+body {
+  margin: 15;
+  font-family: Arial;
+}
+
+/* The grid: Four equal columns that floats next to each other */
+/* The grid: Four equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 20%;
+  padding: 10px;
+}
+
+/* Style the images inside the grid */
+.column img {
+  opacity: 0.8; 
+  cursor: pointer;
+}
+
+.column img:hover {
+  opacity: 1;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* The expanding image container */
+.container {
+  position: relative;
+  display: none;
+}
+
+/* Expanding image text */
+#imgtext {
+  position: absolute;
+  bottom: 15px;
+  left: 15px;
+  color: white;
+  font-size: 20px;
+}
+
+/* Closable button inside the expanded image */
+.closebtn {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  color: white;
+  font-size: 35px;
+  cursor: pointer;
+}
+</style>
+</head>
+<body>
+    <!-- <h2>REGISTRATION FORM "NCC/NSS"</h1> -->
+    <div class="top">
+        <header>
+            <div class="logo">
+                <img src="https://i.ibb.co/xDhkdvJ/download-removebg-preview.png" alt="">
+            </div>
+            <div class="title">
+                <h2>REGISTRATION FORM "NCC/NSS"</h2>
+            </div>
+            <div class="menu">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li class="dropdown"><button class="dropbtn">About</button>
+                        <div class="dropdown-content">
+                            <a href="ncc.html"> NCC</a>
+                            <a href="NSS.HTML">NSS</a>
+                            <a href="COLLEGE.HTML">COLLEGE</a>
+                        </div>
+                    </li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                </ul>
+            </div>
+        </header>
+    </div>
+
+    <div style="text-align:center">
+        <h2>Tabbed Image Gallery</h2>
+        <p>Click on the images below:</p>
+      </div>
+
+    <div class="row">
+        <div class="column">
+          <img src="/assets/img2/IMG_20211207_154541.jpg" width="100%" alt="Gate" onclick="myFunction(this);">
+        </div>
+        <div class="column">
+          <img src="/assets/img2/IMG_20211203_145245.jpg" width="100%" alt="Basketball court" onclick="myFunction(this);">
+        </div>
+        <div class="column">
+          <img src="/assets/img2/IMG_20211220_112645.jpg" width="100%" alt="Ground" onclick="myFunction(this);">
+        </div>
+        <div class="column">
+          <img src="/assets/img2/IMG_20211220_130531.jpg" width="100%" alt="Ground" onclick="myFunction(this);">
+        </div>
+        <div class="column">
+            <img src="/assets/img2/IMG-20220129-WA0017.jpg" width="100%" alt="Army NCC" onclick="myFunction(this);">
+          </div>
+          <div class="column">
+            <img src="/assets/img2/WhatsApp Image 2022-05-13 at 4.53.48 PM.jpeg" width="100%" alt="NCC Group" onclick="myFunction(this);">
+          </div>
+        </div>
+
+          <div class="container3">
+            <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+            <img id="expandedImg" style="width:100%">
+            <div id="imgtext"></div>
+          </div>
+
+          <script>
+            function myFunction(imgs) {
+              var expandImg = document.getElementById("expandedImg");
+              var imgText = document.getElementById("imgtext");
+              expandImg.src = imgs.src;
+              imgText.innerHTML = imgs.alt;
+              expandImg.parentElement.style.display = "block";
+            }
+            </script>
+            
+            </body>
+            </html>

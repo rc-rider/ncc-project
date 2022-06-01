@@ -1,0 +1,168 @@
+* {
+    font-family: 'IBM Plex Sans Arabic', sans-serif;
+    font-weight: 400;
+    box-sizing: border-box;
+}
+
+h1{
+    text-align: center;
+}
+
+
+
+header{
+    display: flex;
+    background: #f3efef;
+    justify-content: space-between;
+    padding: 4px;
+    margin-bottom: 20px;
+}
+
+header .logo{
+    margin-left: 157px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header ul {
+    list-style-type: none;
+    display: flex;
+    margin-top: 35px;
+    font-size: 20px;
+    margin-right: 140px;
+}
+
+header ul li a{
+    text-decoration: none;
+    margin-right: 10px;
+    background-color: #e3dddd;
+    padding: 10px 25px;
+    border-radius: 7px;
+}
+
+header ul li a:hover{
+    background-color: #222;
+    transition: .5s;
+    color: white;
+}
+
+.title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 100px;
+}
+
+
+.container {
+    font-family: verdana;
+    color: white;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: bold;
+    background: linear-gradient(to bottom, #33ccff 0%, #ff99cc 100%);
+    border-collapse: collapse;
+    border: 1px solid #000000;
+    border-style: dashed;
+    width: 100%;
+    margin: 0 auto;
+    padding: 30px;
+    border-radius: 7px;
+} 
+
+.upload{
+    display: flex;
+    justify-content: flex-end;
+}
+
+select {
+    padding: 10px 25px;
+}
+
+    table.inner {
+        border: 10px
+    }
+
+input[type=text], input[type=email], input[type=number] {
+    width: 50%;
+    padding: 9px 12px;
+    margin: 5px 0;
+    box-sizing: border-box;
+    font-size: 20px;
+    font-size: 1em;
+    border: none;
+    border-radius: 7px;
+}
+
+
+input[type=submit], input[type=reset] {
+    width: 20%;
+    padding: 10px 20px;
+    margin: 5px 0;
+    box-sizing: border-box;
+    background-image: linear-gradient(135deg, #007adf 10%, #00ecbc 100%);
+    border-radius: 20px;
+    border: none;
+    margin-right: 20px;
+    font-weight: 500;
+    color: white;
+    margin-left: 30px;
+}
+
+.auto-style2 {
+    width: 443px;
+}
+
+.auto-style3 {
+    width: 625px;
+    height: 25px;
+}
+
+.auto-style4 {
+    width: 628px;
+    height: 25px;
+}
+
+.auto-style6 {
+    width: 421px;
+    height: 23px;
+}
+
+.auto-style7 {
+    margin-left: 160px;
+    margin-right: 69px;
+}
+
+.auto-style8 {
+    width: 865px;
+}
+
+select.auto-style6, select.auto-style3, select.auto-style4{
+    height: 42px;
+}
+
+textarea{
+    border-radius: 7px;
+}
+input[type=text], select, textarea {
+width: 100%;
+padding: 12px;
+border: 1px solid #ccc;
+border-radius: 4px;
+box-sizing: border-box;
+margin-top: 6px;
+margin-bottom: 16px;
+resize: vertical;
+}
+.container{
+    border-radius: 3px;
+    padding: 15px;
+}
+
+.pep{
+    padding: 20px;
+}
+
+
+ 
